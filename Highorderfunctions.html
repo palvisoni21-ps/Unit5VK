@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[1,2,3,4,5];
+        document.write("<h3>foreach()-displaying numbers </h3>");
+        num.forEach(function(n)
+        {
+            document.write(n+" ");
+        });
+         document.write("<h3>map() function </h3>");
+         let store=num.map(function(n)
+        {
+            return n*2;
+        });
+        document.write(store);
+          document.write("<h3>Filter() function </h3>");
+        let res=num.filter(function(n)
+    {
+        return n%2!=0;
+    }
+    );
+    document.write(res);
+    </script>
+</body>
+</html>
